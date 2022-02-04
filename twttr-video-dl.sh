@@ -10,6 +10,6 @@ YOUTUBEDL_TWTTR_VIDEOS=('https://twitter.com/IwriteOK/status/1489058710831861763
 for video in "${YOUTUBEDL_TWTTR_VIDEOS[@]}"
 do
   echo "downloading video from $video, please wait ..."
-  youtube-dl "-o %(title).100s-%(id)s.%(ext)s" $video   # limits video title to 100 characters so youtube-dl doesn't break
+youtube-dl "-o %(upload_date)s.%(timestamp)s.%(title).80s-%(id)s.%(ext)s"   # adds date and timestamp (time in unix), limits video title to 80 characters so youtube-dl doesn't break
   echo "done"
 done
