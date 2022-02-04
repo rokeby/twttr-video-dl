@@ -1,3 +1,3 @@
 # twttr-video-dl
 
-Downloads videos from tweets
+Uses [youtube-dl](https://github.com/ytdl-org/youtube-dl) to download videos from an array of tweets.
